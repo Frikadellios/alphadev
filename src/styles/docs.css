@@ -1,0 +1,40 @@
+/* Dark mode colors. */
+@import '@fontsource/geist-sans';
+@import "tailwindcss/preflight" layer(base);
+@import "tailwindcss/utilities" layer(utilities);
+
+@theme {
+  --font-family-display: "Geist Sans", "sans-serif";
+
+  --breakpoint-3xl: 1920px;
+    --color-neon-pink: oklch(71.7% 0.25 360);
+    --color-neon-lime: oklch(91.5% 0.258 129);
+    --color-neon-cyan: oklch(91.3% 0.139 195.8);
+    
+    --sl-color-accent-low: oklch(71.7% 0.25 360);
+	--sl-color-accent: oklch(71.7% 0.25 360);
+	--sl-color-accent-high: oklch(91.3% 0.139 195.8);
+	--sl-color-white: oklch(100% 0 0);
+	--sl-color-gray-1: oklch(94.87% 0.006 264.53);
+	--sl-color-gray-2: oklch(81.4% 0.007 268.54);
+	--sl-color-gray-3: oklch(63.78% 0.017 273.72);
+	--sl-color-gray-4: oklch(46% 0.015 266.57);
+	--sl-color-gray-5: oklch(34.14% 0.016 270.9);
+	--sl-color-gray-6: oklch(27.31% 0.015 269.11);
+	--sl-color-black: oklch(0% 0 0);
+}
+
+:root[data-theme='light'] {
+	--sl-color-accent-low: oklch(100% 0 0);
+	--sl-color-accent: oklch(53.97% 0.163 160.41);
+	--sl-color-accent-high: oklch(91.3% 0.139 195.8);
+	--sl-color-white: oklch(20.97% 0.008 274.53);
+	--sl-color-gray-1: oklch(27.31% 0.015 269.11);
+	--sl-color-gray-2: oklch(34.14% 0.016 270.9);
+	--sl-color-gray-3: oklch(46% 0.015 266.57);
+	--sl-color-gray-4: oklch(63.78% 0.017 273.72);
+	--sl-color-gray-5: oklch(81.4% 0.007 268.54);
+	--sl-color-gray-6: oklch(94.87% 0.006 264.53);
+	--sl-color-gray-7: oklch(97.29% 0.003 264.54);
+	--sl-color-black: oklch(100% 0 0);
+}

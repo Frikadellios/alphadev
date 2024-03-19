@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.5.9",
+    "@astrojs/starlight": "^0.21.1",
     "@astrojs/svelte": "^5.2.0",
     "@astrojs/tailwind": "^5.1.0",
+    "@fontsource/geist-sans": "^5.0.2",
     "@tailwindcss/cli": "^4.0.0-alpha.9",
     "@tailwindcss/postcss": "^4.0.0-alpha.9",
     "@tailwindcss/vite": "^4.0.0-alpha.9",
@@ -21,9 +23,8 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "lightningcss": "^1.24.1",
-    "lucide-react": "^0.352.0",
     "lucide-svelte": "^0.359.0",
-    "mode-watcher": "^0.3.0",
+    "starlight-blog": "^0.5.1",
     "svelte": "5.0.0-next.80",
     "tailwind-merge": "^2.2.2",
     "tailwind-variants": "^0.2.1",
@@ -37,7 +38,8 @@
   },
   "devDependencies": {
     "@types/bun": "latest",
-    "@types/node": "^20"
+    "@types/node": "^20",
+    "unplugin-auto-import": "^0.17.5"
   },
   "main": "astro.config.mjs",
   "repository": {
