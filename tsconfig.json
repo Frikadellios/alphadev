@@ -17,7 +17,13 @@
     "noFallthroughCasesInSwitch": true,
     "forceConsistentCasingInFileNames": true,
     "jsx": "preserve",
-
+    "baseUrl": ".",
+    "paths": {
+      "$lib/*": ["./src/lib/*"],
+      "$utils/*": ["./src/utils/*"],
+      "$layouts/*": ["./src/layouts/*.astro"],
+      "$styles": ["./src/styles/*"]
+    },
   },
   "exclude": ["node_modules"],
 }
