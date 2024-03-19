@@ -1,0 +1,21 @@
+{
+  "extends": "astro/tsconfigs/base",
+  "compilerOptions": {
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleDetection": "force",
+    "allowJs": true,
+    "moduleResolution": "Bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "preserveConstEnums": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+  },
+  "exclude": ["node_modules"],
+}
