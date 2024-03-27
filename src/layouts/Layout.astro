@@ -1,3 +1,31 @@
-<head>
-    <link rel="sitemap" href="/sitemap-index.xml" />
-</head>
+---
+import { ViewTransitions } from 'astro:transitions'
+import Starlight from '../components/Starlight.astro'
+import '../styles/globals.css'
+export interface Props {
+  title: string
+  description?: string
+}
+
+const { title } = Astro.props
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+		<meta name="generator" content={Astro.generator} />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+		<title>{title}</title>
+		<ViewTransitions />
+		
+	</head>
+	<Starlight />	
+
+	<bodys>
+		<slot />
+	</body>
+</html>

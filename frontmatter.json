@@ -1,0 +1,545 @@
+{
+  "$schema": "https://beta.frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.content.supportedFileTypes": ["md", "markdown", "mdx", "mdoc"],
+  "frontMatter.content.publicFolder": {
+    "path": "src/assets",
+    "relative": true
+  },
+  "frontMatter.git.enabled": true,
+  "frontMatter.git.submodule.folder": ".frontmatter",
+  "frontMatter.framework.startCommand": "bunx --bun astro dev --watch",
+  "frontMatter.sponsors.ai.enabled": true,
+  "frontMatter.experimental": true,
+  "frontMatter.dashboard.content.pagination": true,
+  "frontMatter.dashboard.content.card.fields.date": true,
+  "frontMatter.content.snippets": {},
+  "frontMatter.dashboard.content.cardTags": "tags",
+  "frontMatter.taxonomy.dateFormat": "YYYY-MM-DD",
+  "frontMatter.taxonomy.seoTitleField": "metaTitle",
+  "frontMatter.taxonomy.seoDescriptionField": "metaDescription",
+  "frontMatter.taxonomy.seoContentLengh": 1760,
+  "frontMatter.taxonomy.seoTitleLength": 60,
+  "frontMatter.taxonomy.seoSlugLength": 75,
+  "frontMatter.config.dynamicFilePath": "",
+  "frontMatter.taxonomy.alignFilename": true,
+  "frontMatter.taxonomy.customTaxonomy": [
+    {
+      "id": "collection",
+      "options": ["development", "marketing", "OSS", "fr", "es", "de"]
+    }
+  ],
+  "frontMatter.content.draftField": {
+    "name": "draft",
+    "type": "choice",
+    "choices": ["draft", "in progress", "published"]
+  },
+  "frontMatter.content.i18n": [
+    {
+      "title": "English",
+      "locale": "en",
+      "path": "en"
+    },
+    {
+      "title": "Portugal",
+      "locale": "pt",
+      "path": "pt"
+    },
+    {
+      "title": "German",
+      "locale": "de",
+      "path": "de"
+    },
+    {
+      "title": "Russian",
+      "locale": "ru",
+      "path": "ru"
+    },
+    {
+      "title": "Ukrainian",
+      "locale": "uk",
+      "path": "uk"
+    },
+    {
+      "title": "Spain",
+      "locale": "es",
+      "path": "es"
+    },
+    {
+      "title": "France",
+      "locale": "fr",
+      "path": "fr"
+    }
+  ],
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "blog",
+      "previewPath": "'blog'",
+      "pageBundle": false,
+      "clearEmpty": false,
+      "fields": [
+        {
+          "title": "Language",
+          "name": "lang",
+          "type": "choice",
+          "choices": [
+            {
+              "id": "en",
+              "title": "English"
+            },
+            {
+              "id": "uk",
+              "title": "Ukrainian"
+            },
+            {
+              "id": "ru",
+              "title": "Russian"
+            },
+            {
+              "id": "es",
+              "title": "Spain"
+            },
+            {
+              "id": "de",
+              "title": "German"
+            },
+            {
+              "id": "fr",
+              "title": "France"
+            },
+            {
+              "id": "pt",
+              "title": "Portugal"
+            }
+          ]
+        },
+        {
+          "title": "Meta Title",
+          "name": "metaTitle",
+          "type": "string"
+        },
+        {
+          "title": "Meta Description",
+          "name": "metaDescription",
+          "type": "string"
+        },
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Collection",
+          "name": "collection",
+          "type": "taxonomy",
+          "taxonomyId": "collection"
+        },
+        {
+          "title": "Publishing date",
+          "name": "pubDate",
+          "type": "datetime",
+          "default": "{{now}}",
+          "dateFormat": "YYYY-MM-DD",
+          "isPublishDate": true
+        },
+        {
+          "title": "Slug",
+          "name": "slug",
+          "type": "slug",
+          "editable": true,
+          "default": "{{slug}}"
+        },
+        {
+          "title": "Content preview",
+          "name": "previewImage",
+          "type": "image",
+          "isPreviewImage": true
+        },
+        {
+          "title": "Is in draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "Category",
+          "name": "category",
+          "type": "categories",
+          "singleValueAsString": false,
+          "single": false
+        },
+        {
+          "title": "pubDate",
+          "name": "pubDate",
+          "type": "datetime"
+        },
+        {
+          "title": "heroImage",
+          "name": "heroImage",
+          "type": "image"
+        },
+        {
+          "title": "Authors",
+          "name": "author",
+          "type": "block",
+          "fieldGroup": ["author"]
+        }
+      ]
+    },
+    {
+      "name": "portfolio",
+      "previewPath": "'portfolio'",
+      "pageBundle": false,
+      "clearEmpty": true,
+      "fields": []
+    },
+    {
+      "name": "services",
+      "previewPath": "'services'",
+      "pageBundle": false,
+      "clearEmpty": true,
+      "fields": []
+    },
+    {
+      "name": "projects",
+      "previewPath": "'projects'",
+      "pageBundle": false,
+      "clearEmpty": true,
+      "fields": []
+    },
+    {
+      "name": "partners",
+      "previewPath": "'partners'",
+      "pageBundle": false,
+      "clearEmpty": true,
+      "fields": []
+    },
+    {
+      "name": "docs",
+      "previewPath": "'docs'",
+      "pageBundle": false,
+      "clearEmpty": true,
+      "fields": []
+    }
+  ],
+  "frontMatter.framework.id": "astro",
+  "frontMatter.preview.host": "http://localhost:4321",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "blog",
+      "path": "[[workspace]]/src/content/docs/blog",
+      "contentTypes": ["blog"],
+      "filePrefix": "",
+      "defaultLocale": "en",
+      "locales": [
+        {
+          "title": "English",
+          "locale": "en",
+          "path": "en"
+        },
+        {
+          "title": "German",
+          "locale": "de",
+          "path": "./de"
+        },
+        {
+          "title": "Russian",
+          "locale": "ru",
+          "path": "./ru"
+        },
+        {
+          "title": "Ukrainian",
+          "locale": "uk",
+          "path": "./uk"
+        },
+        {
+          "title": "Spain",
+          "locale": "es",
+          "path": "./es"
+        },
+        {
+          "title": "France",
+          "locale": "fr",
+          "path": "./fr"
+        }
+      ]
+    },
+    {
+      "title": "docs",
+      "path": "[[workspace]]/src/content/docs",
+      "contentTypes": ["docs"],
+      "filePrefix": "",
+      "defaultLocale": "en",
+      "locales": [
+        {
+          "title": "English",
+          "locale": "en",
+          "path": "en"
+        },
+        {
+          "title": "German",
+          "locale": "de",
+          "path": "./de"
+        },
+        {
+          "title": "Russian",
+          "locale": "ru",
+          "path": "./ru"
+        },
+        {
+          "title": "Ukrainian",
+          "locale": "uk",
+          "path": "./uk"
+        },
+        {
+          "title": "Spain",
+          "locale": "es",
+          "path": "./es"
+        },
+        {
+          "title": "France",
+          "locale": "fr",
+          "path": "./fr"
+        }
+      ]
+    },
+    {
+      "title": "partners",
+      "path": "[[workspace]]/src/content/docs/partners",
+      "contentTypes": ["partners"],
+      "filePrefix": "",
+      "defaultLocale": "en",
+      "locales": [
+        {
+          "title": "English",
+          "locale": "en",
+          "path": "en"
+        },
+        {
+          "title": "German",
+          "locale": "de",
+          "path": "./de"
+        },
+        {
+          "title": "Russian",
+          "locale": "ru",
+          "path": "./ru"
+        },
+        {
+          "title": "Ukrainian",
+          "locale": "uk",
+          "path": "./uk"
+        },
+        {
+          "title": "Spain",
+          "locale": "es",
+          "path": "./es"
+        },
+        {
+          "title": "France",
+          "locale": "fr",
+          "path": "./fr"
+        }
+      ]
+    },
+    {
+      "title": "portfolio",
+      "path": "[[workspace]]/src/content/docs/portfolio",
+      "contentTypes": ["portfolio"],
+      "filePrefix": "",
+      "defaultLocale": "en",
+      "locales": [
+        {
+          "title": "English",
+          "locale": "en",
+          "path": "en"
+        },
+        {
+          "title": "German",
+          "locale": "de",
+          "path": "./de"
+        },
+        {
+          "title": "Russian",
+          "locale": "ru",
+          "path": "./ru"
+        },
+        {
+          "title": "Ukrainian",
+          "locale": "uk",
+          "path": "./uk"
+        },
+        {
+          "title": "Spain",
+          "locale": "es",
+          "path": "./es"
+        },
+        {
+          "title": "France",
+          "locale": "fr",
+          "path": "./fr"
+        }
+      ]
+    },
+    {
+      "title": "projects",
+      "path": "[[workspace]]/src/content/docs/projects",
+      "contentTypes": ["projects"],
+      "filePrefix": "",
+      "defaultLocale": "en",
+      "locales": [
+        {
+          "title": "English",
+          "locale": "en",
+          "path": "en"
+        },
+        {
+          "title": "German",
+          "locale": "de",
+          "path": "./de"
+        },
+        {
+          "title": "Russian",
+          "locale": "ru",
+          "path": "./ru"
+        },
+        {
+          "title": "Ukrainian",
+          "locale": "uk",
+          "path": "./uk"
+        },
+        {
+          "title": "Spain",
+          "locale": "es",
+          "path": "./es"
+        },
+        {
+          "title": "France",
+          "locale": "fr",
+          "path": "./fr"
+        }
+      ]
+    },
+    {
+      "title": "services",
+      "path": "[[workspace]]/src/content/docs/services",
+      "contentTypes": ["services"],
+      "filePrefix": "",
+      "defaultLocale": "en",
+      "locales": [
+        {
+          "title": "English",
+          "locale": "en",
+          "path": "en"
+        },
+        {
+          "title": "German",
+          "locale": "de",
+          "path": "./de"
+        },
+        {
+          "title": "Russian",
+          "locale": "ru",
+          "path": "./ru"
+        },
+        {
+          "title": "Ukrainian",
+          "locale": "uk",
+          "path": "./uk"
+        },
+        {
+          "title": "Spain",
+          "locale": "es",
+          "path": "./es"
+        },
+        {
+          "title": "France",
+          "locale": "fr",
+          "path": "./fr"
+        }
+      ]
+    }
+  ],
+  "frontMatter.taxonomy.fieldGroups": [
+    {
+      "id": "GeneralFields",
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "name": "fieldCollection",
+          "type": "fieldCollection",
+          "fieldGroup": "GeneralFields"
+        }
+      ]
+    },
+    {
+      "id": "author",
+      "labelField": "name",
+      "fields": [
+        {
+          "title": "Author Name",
+          "name": "name",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Social link",
+          "name": "social",
+          "type": "string",
+          "single": false
+        }
+      ]
+    }
+  ],
+  "frontMatter.data.files": [
+    {
+      "id": "authors",
+      "title": "Authors",
+      "file": "[[workspace]]/data/authors.json",
+      "schema": {
+        "title": "Author",
+        "type": "object",
+        "required": ["name", "url"],
+        "properties": {
+          "slug": {
+            "title": "slug",
+            "type": "string"
+          },
+          "name": {
+            "title": "name",
+            "type": "string"
+          },
+          "image": {},
+          "bio": {
+            "type": "string",
+            "title": "bio",
+            "multiline": true
+          },
+          "url": {
+            "title": "url",
+            "type": "string"
+          }
+        }
+      }
+    }
+  ],
+  "frontMatter.dashboard.openOnStart": false
+}

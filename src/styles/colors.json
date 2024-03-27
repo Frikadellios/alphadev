@@ -1,0 +1,196 @@
+{
+  "blue": {
+    "50": "oklch(0.95 0.094 250.8 / <alpha-value>)",
+    "100": "oklch(0.9 0.094 250.8 / <alpha-value>)",
+    "200": "oklch(0.8 0.094 250.8 / <alpha-value>)",
+    "300": "oklch(0.7 0.094 250.8 / <alpha-value>)",
+    "400": "oklch(0.6 0.094 250.8 / <alpha-value>)",
+    "500": "oklch(0.5 0.094 250.8 / <alpha-value>)",
+    "600": "oklch(0.4 0.094 250.8 / <alpha-value>)",
+    "700": "oklch(0.3 0.094 250.8 / <alpha-value>)",
+    "800": "oklch(0.2 0.094 250.8 / <alpha-value>)",
+    "900": "oklch(0.1 0.094 250.8 / <alpha-value>)",
+    "950": "oklch(0.05 0.094 250.8 / <alpha-value>)",
+    "DEFAULT": "oklch(0.33 0.094 250.8 / <alpha-value>)"
+  },
+
+  "pink": {
+    "50": "oklch(0.95 0.212 354.31 / <alpha-value>)",
+    "100": "oklch(0.9 0.212 354.31 / <alpha-value>)",
+    "200": "oklch(0.8 0.212 354.31 / <alpha-value>)",
+    "300": "oklch(0.7 0.212 354.31 / <alpha-value>)",
+    "400": "oklch(0.6 0.212 354.31 / <alpha-value>)",
+    "500": "oklch(0.5 0.212 354.31 / <alpha-value>)",
+    "600": "oklch(0.4 0.212 354.31 / <alpha-value>)",
+    "700": "oklch(0.3 0.212 354.31 / <alpha-value>)",
+    "800": "oklch(0.2 0.212 354.31 / <alpha-value>)",
+    "900": "oklch(0.1 0.212 354.31 / <alpha-value>)",
+    "950": "oklch(0.05 0.212 354.31 / <alpha-value>)",
+    "DEFAULT": "oklch(0.6559 0.212 354.31 / <alpha-value>)"
+  },
+
+  "rose": {
+    "50": "oklch(0.95 0.215 16.44 / <alpha-value>)",
+    "100": "oklch(0.9 0.215 16.44 / <alpha-value>)",
+    "200": "oklch(0.8 0.215 16.44 / <alpha-value>)",
+    "300": "oklch(0.7 0.215 16.44 / <alpha-value>)",
+    "400": "oklch(0.6 0.215 16.44 / <alpha-value>)",
+    "500": "oklch(0.5 0.215 16.44 / <alpha-value>)",
+    "600": "oklch(0.4 0.215 16.44 / <alpha-value>)",
+    "700": "oklch(0.3 0.215 16.44 / <alpha-value>)",
+    "800": "oklch(0.2 0.215 16.44 / <alpha-value>)",
+    "900": "oklch(0.1 0.215 16.44 / <alpha-value>)",
+    "950": "oklch(0.05 0.215 16.44 / <alpha-value>)",
+    "DEFAULT": "oklch(0.645 0.215 16.44 / <alpha-value>)"
+  },
+
+  "fuschsia": {
+    "50": "oklch(0.95 0.259 322.15 / <alpha-value>)",
+    "100": "oklch(0.9 0.259 322.15 / <alpha-value>)",
+    "200": "oklch(0.8 0.259 322.15 / <alpha-value>)",
+    "300": "oklch(0.7 0.259 322.15 / <alpha-value>)",
+    "400": "oklch(0.6 0.259 322.15 / <alpha-value>)",
+    "500": "oklch(0.5 0.259 322.15 / <alpha-value>)",
+    "600": "oklch(0.4 0.259 322.15 / <alpha-value>)",
+    "700": "oklch(0.3 0.259 322.15 / <alpha-value>)",
+    "800": "oklch(0.2 0.259 322.15 / <alpha-value>)",
+    "900": "oklch(0.1 0.259 322.15 / <alpha-value>)",
+    "950": "oklch(0.05 0.259 322.15 / <alpha-value>)",
+    "DEFAULT": "oklch(0.6668 0.259 322.15 / <alpha-value>)"
+  },
+
+  "purple": {
+    "50": "oklch(0.95 0.233 303.9 / <alpha-value>)",
+    "100": "oklch(0.9 0.233 303.9 / <alpha-value>)",
+    "200": "oklch(0.8 0.233 303.9 / <alpha-value>)",
+    "300": "oklch(0.7 0.233 303.9 / <alpha-value>)",
+    "400": "oklch(0.6 0.233 303.9 / <alpha-value>)",
+    "500": "oklch(0.5 0.233 303.9 / <alpha-value>)",
+    "600": "oklch(0.4 0.233 303.9 / <alpha-value>)",
+    "700": "oklch(0.3 0.233 303.9 / <alpha-value>)",
+    "800": "oklch(0.2 0.233 303.9 / <alpha-value>)",
+    "900": "oklch(0.1 0.233 303.9 / <alpha-value>)",
+    "950": "oklch(0.05 0.233 303.9 / <alpha-value>)",
+    "DEFAULT": "oklch(0.6268 0.233 303.9 / <alpha-value>)"
+  },
+
+  "violet": {
+    "50": "oklch(0.95 NaN 246.03 / <alpha-value>)",
+    "100": "oklch(0.9 NaN 246.03 / <alpha-value>)",
+    "200": "oklch(0.8 NaN 246.03 / <alpha-value>)",
+    "300": "oklch(0.7 NaN 246.03 / <alpha-value>)",
+    "400": "oklch(0.6 NaN 246.03 / <alpha-value>)",
+    "500": "oklch(0.5 NaN 246.03 / <alpha-value>)",
+    "600": "oklch(0.4 NaN 246.03 / <alpha-value>)",
+    "700": "oklch(0.3 NaN 246.03 / <alpha-value>)",
+    "800": "oklch(0.2 NaN 246.03 / <alpha-value>)",
+    "900": "oklch(0.1 NaN 246.03 / <alpha-value>)",
+    "950": "oklch(0.05 NaN 246.03 / <alpha-value>)",
+    "DEFAULT": "oklch(NaN NaN 246.03 / <alpha-value>)"
+  },
+
+  "green": {
+    "50": "oklch(0.95 0.207 156.57 / <alpha-value>)",
+    "100": "oklch(0.9 0.207 156.57 / <alpha-value>)",
+    "200": "oklch(0.8 0.207 156.57 / <alpha-value>)",
+    "300": "oklch(0.7 0.207 156.57 / <alpha-value>)",
+    "400": "oklch(0.6 0.207 156.57 / <alpha-value>)",
+    "500": "oklch(0.5 0.207 156.57 / <alpha-value>)",
+    "600": "oklch(0.4 0.207 156.57 / <alpha-value>)",
+    "700": "oklch(0.3 0.207 156.57 / <alpha-value>)",
+    "800": "oklch(0.2 0.207 156.57 / <alpha-value>)",
+    "900": "oklch(0.1 0.207 156.57 / <alpha-value>)",
+    "950": "oklch(0.05 0.207 156.57 / <alpha-value>)",
+    "DEFAULT": "oklch(0.8759 0.207 156.57 / <alpha-value>)"
+  },
+
+  "teal": {
+    "50": "oklch(0.95 0.123 182.5 / <alpha-value>)",
+    "100": "oklch(0.9 0.123 182.5 / <alpha-value>)",
+    "200": "oklch(0.8 0.123 182.5 / <alpha-value>)",
+    "300": "oklch(0.7 0.123 182.5 / <alpha-value>)",
+    "400": "oklch(0.6 0.123 182.5 / <alpha-value>)",
+    "500": "oklch(0.5 0.123 182.5 / <alpha-value>)",
+    "600": "oklch(0.4 0.123 182.5 / <alpha-value>)",
+    "700": "oklch(0.3 0.123 182.5 / <alpha-value>)",
+    "800": "oklch(0.2 0.123 182.5 / <alpha-value>)",
+    "900": "oklch(0.1 0.123 182.5 / <alpha-value>)",
+    "950": "oklch(0.05 0.123 182.5 / <alpha-value>)",
+    "DEFAULT": "oklch(0.7038 0.123 182.5 / <alpha-value>)"
+  },
+
+  "yellow": {
+    "50": "oklch(0.95 0.17 92.65 / <alpha-value>)",
+    "100": "oklch(0.9 0.17 92.65 / <alpha-value>)",
+    "200": "oklch(0.8 0.17 92.65 / <alpha-value>)",
+    "300": "oklch(0.7 0.17 92.65 / <alpha-value>)",
+    "400": "oklch(0.6 0.17 92.65 / <alpha-value>)",
+    "500": "oklch(0.5 0.17 92.65 / <alpha-value>)",
+    "600": "oklch(0.4 0.17 92.65 / <alpha-value>)",
+    "700": "oklch(0.3 0.17 92.65 / <alpha-value>)",
+    "800": "oklch(0.2 0.17 92.65 / <alpha-value>)",
+    "900": "oklch(0.1 0.17 92.65 / <alpha-value>)",
+    "950": "oklch(0.05 0.17 92.65 / <alpha-value>)",
+    "DEFAULT": "oklch(0.8533 0.17 92.65 / <alpha-value>)"
+  },
+
+  "red": {
+    "50": "oklch(0.95 0.215 27.33 / <alpha-value>)",
+    "100": "oklch(0.9 0.215 27.33 / <alpha-value>)",
+    "200": "oklch(0.8 0.215 27.33 / <alpha-value>)",
+    "300": "oklch(0.7 0.215 27.33 / <alpha-value>)",
+    "400": "oklch(0.6 0.215 27.33 / <alpha-value>)",
+    "500": "oklch(0.5 0.215 27.33 / <alpha-value>)",
+    "600": "oklch(0.4 0.215 27.33 / <alpha-value>)",
+    "700": "oklch(0.3 0.215 27.33 / <alpha-value>)",
+    "800": "oklch(0.2 0.215 27.33 / <alpha-value>)",
+    "900": "oklch(0.1 0.215 27.33 / <alpha-value>)",
+    "950": "oklch(0.05 0.215 27.33 / <alpha-value>)",
+    "DEFAULT": "oklch(0.5771 0.215 27.33 / <alpha-value>)"
+  },
+
+  "sky": {
+    "50": "oklch(0.95 0.148 237.32 / <alpha-value>)",
+    "100": "oklch(0.9 0.148 237.32 / <alpha-value>)",
+    "200": "oklch(0.8 0.148 237.32 / <alpha-value>)",
+    "300": "oklch(0.7 0.148 237.32 / <alpha-value>)",
+    "400": "oklch(0.6 0.148 237.32 / <alpha-value>)",
+    "500": "oklch(0.5 0.148 237.32 / <alpha-value>)",
+    "600": "oklch(0.4 0.148 237.32 / <alpha-value>)",
+    "700": "oklch(0.3 0.148 237.32 / <alpha-value>)",
+    "800": "oklch(0.2 0.148 237.32 / <alpha-value>)",
+    "900": "oklch(0.1 0.148 237.32 / <alpha-value>)",
+    "950": "oklch(0.05 0.148 237.32 / <alpha-value>)",
+    "DEFAULT": "oklch(0.6847 0.148 237.32 / <alpha-value>)"
+  },
+
+  "indigo": {
+    "50": "oklch(0.95 0.204 277.12 / <alpha-value>)",
+    "100": "oklch(0.9 0.204 277.12 / <alpha-value>)",
+    "200": "oklch(0.8 0.204 277.12 / <alpha-value>)",
+    "300": "oklch(0.7 0.204 277.12 / <alpha-value>)",
+    "400": "oklch(0.6 0.204 277.12 / <alpha-value>)",
+    "500": "oklch(0.5 0.204 277.12 / <alpha-value>)",
+    "600": "oklch(0.4 0.204 277.12 / <alpha-value>)",
+    "700": "oklch(0.3 0.204 277.12 / <alpha-value>)",
+    "800": "oklch(0.2 0.204 277.12 / <alpha-value>)",
+    "900": "oklch(0.1 0.204 277.12 / <alpha-value>)",
+    "950": "oklch(0.05 0.204 277.12 / <alpha-value>)",
+    "DEFAULT": "oklch(0.5854 0.204 277.12 / <alpha-value>)"
+  },
+
+  "emerald": {
+    "50": "oklch(0.95 0.149 162.48 / <alpha-value>)",
+    "100": "oklch(0.9 0.149 162.48 / <alpha-value>)",
+    "200": "oklch(0.8 0.149 162.48 / <alpha-value>)",
+    "300": "oklch(0.7 0.149 162.48 / <alpha-value>)",
+    "400": "oklch(0.6 0.149 162.48 / <alpha-value>)",
+    "500": "oklch(0.5 0.149 162.48 / <alpha-value>)",
+    "600": "oklch(0.4 0.149 162.48 / <alpha-value>)",
+    "700": "oklch(0.3 0.149 162.48 / <alpha-value>)",
+    "800": "oklch(0.2 0.149 162.48 / <alpha-value>)",
+    "900": "oklch(0.1 0.149 162.48 / <alpha-value>)",
+    "950": "oklch(0.05 0.149 162.48 / <alpha-value>)",
+    "DEFAULT": "oklch(0.6959 0.149 162.48 / <alpha-value>)"
+  }
+}

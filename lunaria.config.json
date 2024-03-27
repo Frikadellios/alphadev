@@ -1,0 +1,56 @@
+{
+  "$schema": "./node_modules/@lunariajs/core/config.schema.json",
+  "repository": {
+    "name": "Frikadellios/alphadev",
+    "branch": "master"
+  },
+  "files": [
+    {
+      "location": "src/content/docs/**/*.{md,mdx}",
+      "pattern": "src/content/docs/@lang/@path",
+      "type": "universal"
+    }
+  ],
+  "locales": [
+    {
+      "label": "Português",
+      "lang": "pt"
+    },
+    {
+      "label": "German",
+      "lang": "de"
+    },
+    {
+      "label": "Russian",
+      "lang": "ru"
+    },
+    {
+      "label": "Ukrainian",
+      "lang": "uk"
+    },
+    {
+      "label": "Spain",
+      "lang": "es"
+    },
+    {
+      "label": "France",
+      "lang": "fr"
+    }
+  ],
+  "defaultLocale": {
+    "label": "English",
+    "lang": "en"
+  },
+  "dashboard": {
+    "title": "Localization",
+    "description": "Page preview for the localization of AlphaDEV documentation",
+    "favicon": {
+      "external": [
+        {
+          "link": "https://alphadev.vercel.app/favicon.svg",
+          "type": "image/svg"
+        }
+      ]
+    }
+  }
+}

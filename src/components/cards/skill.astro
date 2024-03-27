@@ -1,0 +1,48 @@
+---
+import { Image } from 'astro:assets'
+// Props type
+type Props = {
+  title: string
+  image: ImageMetadata
+  description: string
+}
+// Translation Imports? create locales
+
+// Astro Props!
+const { title, image, description } = Astro.props
+---
+
+<div class="flex flex-col items-start gap-4">
+  <div class="flex items-center p-2 text-white rounded bg-trancperent border-5px border-color-emerald-clasic border-radius-15">
+    <Image src={image} class="h-16 w-16" alt={`Avatar ${title}`} />
+  </div>
+  <div class="flex flex-col items-start justify-center w-full min-w-0 gap-0">
+
+    <div>
+      <p class="mb-3 font-bold text-lg font-semibold mt-3  main-heading">{title}{" "}
+      <p class="transition-colors font-bold text-emerald-400 duration-300 hover:text-emerald-500 focus:text-emerald-500" >{description}</p>
+    </div>
+  </div>
+
+  <style>
+
+
+    .main-heading {
+  display: inline-block;
+
+  background: linear-gradient(
+    89.81deg,
+    rgb(0, 87, 128) -1.72%,
+    #33d2ff 54.05%,
+    #57dd84 99.78%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  background-size: 150% 150%;
+  animation: gradient 15s ease infinite;
+}
+  </style>
+
+  

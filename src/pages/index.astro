@@ -1,0 +1,24 @@
+---
+import CTA from '../components/CTA.astro'
+import Features from '../components/Features.astro'
+import Footers from '../components/Footers.astro'
+import PageHeader from '../components/PageHeader.astro'
+import Skills from '../components/Skills.astro'
+import Team from '../components/Technologies.astro'
+import Testimonials from '../components/Testimonials.astro'
+import Layout from '../layouts/Layout.astro'
+---
+
+	<Layout title="About Project">
+		<div class="@container">
+			<main class="max-w-5xl mx-auto mt-5 @xl:flex @xl:flex-wrap">
+				<PageHeader title="Get Started with New Modern Stack" description="This is a Future" content="Build fastest Websites and User Interfaces for improve your web application with the minimal effort." />
+				<Features />
+				<Skills />
+				<Team />
+				<Testimonials />
+				<CTA buttonText="Click ME!" href="/greetings" title="Get Started with New Modern Stack" description="This is a Future" content="Build fastest Websites and User Interfaces for improve your web application with the minimal effort." />
+				<Footers />
+			</main>
+		</div>
+	</Layout>

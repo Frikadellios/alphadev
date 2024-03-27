@@ -1,0 +1,54 @@
+---
+import { Image } from 'astro:assets'
+
+// Props type
+type Props = {
+  title: string
+  image: ImageMetadata
+}
+
+const { title, image } = Astro.props
+---
+<Image src={image} class="h-16 w-16" alt={`Avatar ${title}`} />
+<div class="loader">
+    {title}
+</div>
+
+<style>
+    .loader {
+  font-size: 1rem;
+  font-family: sans-serif;
+  font-variant: small-caps;
+  font-weight: 900;
+  background: conic-gradient(
+    #1E1E1E 0 25%,
+    #010C80 25% 50%,
+    #00A7E1 50% 75%,
+    #35D994 75%
+  );
+  background-size: 200% 200%;
+  animation: animateBackground 4.5s ease-in-out infinite;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+@keyframes animateBackground {
+  25% {
+    background-position: 0 100%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  75% {
+    background-position: 100% 0%;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+</style>

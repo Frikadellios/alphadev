@@ -19,11 +19,18 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "$lib/*": ["./src/lib/*"],
-      "$utils/*": ["./src/utils/*"],
-      "$layouts/*": ["./src/layouts/*.astro"],
-      "$styles": ["./src/styles/*"]
+      "@/*": ["./src/*"],
+      "@lib/*": ["./src/lib/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@layouts/*": ["./src/layouts/*"],
+      "@styles": ["./src/styles/*"]
     },
+    "plugins": [
+      {
+        "name": "@astrojs/ts-plugin"
+      }
+    ]
   },
   "exclude": ["node_modules"],
+  "include": ["./src/env.d.ts"]
 }

@@ -5,7 +5,6 @@ import sveltePreprocess from 'svelte-preprocess';
 export default {
 	preprocess: [vitePreprocess({}), sveltePreprocess(), ...breferPreprocess()],
 	compilerOptions: {
-		runes: true,
-		hydratable: true
+		runes: false,
 	},
 }

@@ -1,0 +1,35 @@
+---
+title: 'Welcome totest'
+description: Get started building your docs site with Starlight.
+template: splash
+
+---
+import StarlightLayout from '../../layouts/StarlightLayout.astro';
+import { Card, CardGrid } from '@astrojs/starlight/components';
+import "../../../tailwind.docs.css";
+
+import Starlight from '../../components/Starlight.astro';
+import SmallText from "../../components/typography/SmallText.astro";
+import H1 from "../../components/typography/H1.astro";
+import Large from "../../components/typography/Large.astro";
+import { Image } from 'astro:assets'
+
+<StarlightLayout title='Test Page'>
+## Next steps
+
+
+<CardGrid stagger>
+	<Card title="Update content" icon="pencil">
+		Edit `src/content/docs/index.mdx` to see this page change.
+	</Card>
+	<Card title="Add new content" icon="add-document">
+		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	</Card>
+	<Card title="Configure your site" icon="setting">
+		Edit your `sidebar` and other config in `astro.config.mjs`.
+	</Card>
+	<Card title="Read the docs" icon="open-book">
+		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	</Card>
+</CardGrid>
+</StarlightLayout>

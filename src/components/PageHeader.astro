@@ -1,0 +1,38 @@
+---
+export interface Props {
+  description?: string | undefined
+  title?: string | undefined
+  content?: string | undefined
+}
+
+const { title, description, content } = Astro.props
+---
+
+<!-- Page Header Section: Simple -->
+<div class="bg-trancperent ">
+    <div
+      class="container mx-auto space-y-5 px-4 py-5 @lg:px-8 @lg:py-32 @xl:max-w-7xl"
+    >
+     
+      <div class="text-center">
+
+        <div
+          class="mb-1 text-sm font-bold uppercase tracking-wider text-neon-cyan"
+        >
+          {description}
+        </div>
+        <h2 class="mb-4 text-4xl font-black text-black dark:text-white">
+          {title}
+
+        </h2>
+        <h3
+          class="mx-auto text-xl font-medium leading-relaxed text-white dark:text-white lg:w-2/3"
+        >
+         {content}
+        </h3>
+      </div>
+    </div>
+  </div>
+  <!-- END Page Header Section: Simple -->
+
+  

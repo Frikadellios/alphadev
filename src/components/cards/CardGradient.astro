@@ -1,0 +1,61 @@
+---
+export interface Props {
+  description?: string | undefined
+  title?: string | undefined
+  content?: string | undefined
+  href?: string | undefined
+  icon?: string | undefined
+}
+const { title, description, content, icon, href } = Astro.props
+---
+<a href={href}>
+<div class="card">
+    <div>{icon}</div>
+    <h3>{title}</h3>
+    <h5>{description}</h5>
+    <p>{content}</p>
+</div>
+</a>
+
+
+
+<style>
+.card {
+    width: 190px;
+    height: 254px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0px 15px;
+    background-color: red;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    font-weight: 900;
+    transition-duration: .2s;
+    background: linear-gradient(0deg, #000, #272727);
+  }
+  
+  .card:before, .card:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+          #0000ff, #00ff00,#ffff00, #ff0000);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 20s linear infinite;
+  }
+
+  .card:after {
+    filter: blur(100px);
+  }
+
+</style>

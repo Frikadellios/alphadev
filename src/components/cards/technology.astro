@@ -1,0 +1,42 @@
+---
+import { Image } from 'astro:assets'
+// Props type
+type Props = {
+  title: string
+  image: ImageMetadata
+  description: string
+  link: string
+}
+// Translation Imports? create locales
+
+// Astro Props!
+const { title, image, description, link } = Astro.props
+---
+<div>
+    <a href={link}>
+    <span
+      class="mb-5 inline-block rounded-full bg-white p-2 shadow-lg dark:bg-gray-700/75 shadow-neon-lime dark:shadow-neon-lime"
+    >
+    <Image src={image} class="inline-block size-28 rounded-full" alt={`Avatar ${title}`} />
+    </span>
+    <h4 class="mb-0.5 text-xl font-bold text-neon-cyan">{title}</h4>
+    <p class="font-medium text-white">
+      {description}
+    </p>
+    </a>
+  </div>
+
+  <style>
+    
+    @keyframes vert-move {
+    0% {
+      transform: translateY(-5px);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(-5px);
+    }
+  }
+  </style>

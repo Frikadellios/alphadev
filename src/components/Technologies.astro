@@ -1,0 +1,60 @@
+---
+import { technolies } from '../constants/index'
+import Technology from './cards/technology.astro'
+---
+
+<!-- Team Section: Circle Photos with Title -->
+<div class="bg-trancperent dark:bg-trancperent text-white dark:text-white">
+    <div
+      class="container mx-auto space-y-16 px-4 py-16 lg:px-8 lg:py-32 xl:max-w-7xl"
+    >
+      <!-- Heading -->
+      <div class="text-center">
+        <div
+          class="mb-1 text-sm font-bold uppercase tracking-wider text-teal-600 dark:text-neon-cyan"
+        >
+          Real People
+        </div>
+        <h2 class="mb-4 text-4xl font-black text-black dark:text-white">
+          Meet our talented team
+        </h2>
+        <h3
+          class="mx-auto text-xl font-medium leading-relaxed text-white dark:text-white lg:w-2/3"
+        >
+          They are working nonstop behind the scenes to help you build better
+          products, web services and websites.
+        </h3>
+      </div>
+      <!-- END Heading -->
+  
+      <!-- Team -->
+      <div
+        class="grid grid-cols-1 gap-8 text-center sm:grid-cols-2 md:grid-cols-3 md:gap-16"
+      >
+      {
+        technolies
+          .slice(0, 3)
+          .map((technologies) => <Technology {...technologies} />)
+      }
+      </div>
+      <div
+        class="grid grid-cols-1 gap-8 text-center sm:grid-cols-2 md:grid-cols-3 md:gap-16"
+      >
+      {
+        technolies
+          .slice(3, 6)
+          .map((technologies) => <Technology {...technologies} />)
+      }
+      </div>
+      <div
+      class="grid grid-cols-1 gap-8 text-center sm:grid-cols-2 md:grid-cols-3 md:gap-16"
+    >
+    {
+      technolies
+        .slice(6, 9)
+        .map((technologies) => <Technology {...technologies} />)
+    }
+    </div>
+
+    </div>
+  </div>

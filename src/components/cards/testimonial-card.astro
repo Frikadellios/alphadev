@@ -1,0 +1,33 @@
+---
+// Astro Imports - Globals
+import { Image } from 'astro:assets'
+
+// Props type
+type Props = {
+  name: string
+  image: ImageMetadata
+  review: string
+}
+// Translation Imports
+
+// Astro Props
+const { name, image, review } = Astro.props
+---
+
+<div
+  class="col-span-1 rounded-lg border bg-card text-card-foreground shadow-sm"
+>
+  <div class="flex items-center justify-between p-6">
+    <h3 class="text-2xl font-semibold leading-none tracking-tight">
+      {name}
+    </h3>
+    <div class="space-y-3">
+      <span
+        class="inline-block rounded-xl bg-white p-2 text-emerald-500 md:mx-4 dark:text-emerald-500"
+      >
+        <Image src={image} class="h-16 w-16" alt={`Avatar ${name}`} />
+      </span>
+    </div>
+  </div>
+  <p class="p-6 pt-0">{review}</p>
+</div>

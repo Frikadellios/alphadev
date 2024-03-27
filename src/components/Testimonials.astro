@@ -1,0 +1,30 @@
+---
+// Assets Imports - Info
+import { testimonials } from '../constants/index'
+
+// Atro Imports - Components
+
+import TestimonialCard from './cards/testimonial-card.astro'
+
+// Translation Imports
+---
+
+<section class="flex flex-col text-white items-center gap-10 pb-10 pt-8" id="testimonials">
+  
+  <!-- Main Testimonio List -->
+  <div class="grid max-w-[1680px] grid-cols-1 gap-5 px-10 md:grid-cols-3">
+    {
+      testimonials
+        .slice(0, 3)
+        .map((testimonials) => <TestimonialCard {...testimonials} />)
+    }
+  </div>
+  <!-- Secondary Testimonio List, hidden in mobile -->
+  <div class="hidden max-w-[1680px] grid-cols-3 gap-5 px-10 md:grid">
+    {
+      testimonials
+        .slice(3, 6)
+        .map((testimonials) => <TestimonialCard {...testimonials} />)
+    }
+  </div>
+</section>
