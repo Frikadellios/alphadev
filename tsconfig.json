@@ -1,5 +1,5 @@
 {
-  "extends": "astro/tsconfigs/base",
+  "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
     "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "target": "ESNext",
@@ -30,7 +30,5 @@
         "name": "@astrojs/ts-plugin"
       }
     ]
-  },
-  "exclude": ["node_modules"],
-  "include": ["./src/env.d.ts"]
+  }
 }

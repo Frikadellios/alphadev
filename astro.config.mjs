@@ -202,6 +202,6 @@ export default defineConfig({
   }), expressiveCode(), liveCode({
     layout: './src/content/LiveCodeLayout.astro'
   }), mdx()],
-  output: "server",
-  adapter: vercel()
+  output: 'server',
+  adapter: vercel(),
 });
