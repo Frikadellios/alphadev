@@ -12,7 +12,7 @@ import { mdsvex } from 'mdsvex';
 import starlightBlog from 'starlight-blog';
 import AutoImport from 'unplugin-auto-import/astro';
 import node from "@astrojs/node";
-
+import vercel from "@astrojs/vercel/serverless";
 const locales = {
   root: {
     label: 'English',
@@ -189,7 +189,7 @@ export default defineConfig({
         devopsick: {
           name: 'Hrihorii Ilin',
           title: 'AlphaDev Devopsick Starter Template',
-          picture: '/favicon.ico',
+          picture: '/devopsick.ico',
           // Images in the `public` directory are supported.
           url: 'https://github.com/Frikadellios'
         }
@@ -203,8 +203,6 @@ export default defineConfig({
   }), expressiveCode(), liveCode({
     layout: './src/content/LiveCodeLayout.astro'
   }), mdx()],
-  output: "server",
-  adapter: node({
-    mode: "standalone"
-  })
+  output: "hybrid",
+  adapter: vercel()
 });
