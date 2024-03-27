@@ -11,7 +11,6 @@ import { defineConfig } from 'astro/config';
 import { mdsvex } from 'mdsvex';
 import starlightBlog from 'starlight-blog';
 import AutoImport from 'unplugin-auto-import/astro';
-import node from "@astrojs/node";
 import vercel from "@astrojs/vercel/serverless";
 const locales = {
   root: {
@@ -47,7 +46,7 @@ const locales = {
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://alphadev.vercel.app',
+  site: 'https://alphadev-seven.vercel.app',
   prefetch: {
     prefetchAll: true
   },
@@ -203,6 +202,6 @@ export default defineConfig({
   }), expressiveCode(), liveCode({
     layout: './src/content/LiveCodeLayout.astro'
   }), mdx()],
-  output: "hybrid",
+  output: "server",
   adapter: vercel()
 });

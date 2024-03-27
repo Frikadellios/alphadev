@@ -1,5 +1,5 @@
 import { DEV } from 'esm-env';
-import { a4 as AstroJSX, A as AstroError, S as renderJSX, a5 as createVNode } from './chunks/astro_BCCVDiEs.mjs';
+import { a4 as AstroJSX, A as AstroError, S as renderJSX, a5 as createVNode } from './chunks/astro_B6G8DoPH.mjs';
 
 const DERIVED = 1 << 1;
 const EFFECT = 1 << 2;

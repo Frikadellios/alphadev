@@ -1,6 +1,7 @@
 # we dont need to commit, can be generated
 yarn.lock
-
+.vercel
+node_modules
 # build output
 dist/
 build
