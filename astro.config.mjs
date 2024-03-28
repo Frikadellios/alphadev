@@ -58,7 +58,7 @@ export default defineConfig({
       entrypoint: 'astro/assets/services/noop'
     }
   },
-  site: 'https://example.com',
+  site: 'https://alphadev.pages.dev',
   output: 'hybrid',
   adapter: cloudflare(),
   markdown: {
