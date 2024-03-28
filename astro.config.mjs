@@ -16,7 +16,7 @@ import { rehypeHeadingIds } from '@astrojs/markdown-remark';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import Icons from 'unplugin-icons/vite';
 import starlightDocSearch from '@astrojs/starlight-docsearch';
-
+import cloudflare from "@astrojs/cloudflare";
 const locales = {
   root: {
     label: 'English',
@@ -52,23 +52,21 @@ const locales = {
 // https://astro.build/config
 export default defineConfig({
   site: 'https://alphadev-seven.vercel.app',
+  output: 'server',
+  adapter: cloudflare(),
   markdown: {
-    rehypePlugins: [
-      rehypeHeadingIds,
-      [
-        rehypeAutolinkHeadings,
-        {
-          // Wrap the heading text in a link.
-          behavior: 'wrap',
-        },
-      ],
-    ],
+    rehypePlugins: [rehypeHeadingIds, [rehypeAutolinkHeadings, {
+      // Wrap the heading text in a link.
+      behavior: 'wrap'
+    }]]
   },
   prefetch: {
     prefetchAll: true
   },
   vite: {
-    plugins: [tailwindcss(), Icons({ compiler: 'astro' })],
+    plugins: [tailwindcss(), Icons({
+      compiler: 'astro'
+    })],
     css: {
       transformer: 'lightningcss'
     }
@@ -85,18 +83,17 @@ export default defineConfig({
     title: 'AlphaDEV',
     components: {
       // Relative path to the custom component.
-      Head: './src/components/Head.astro',
+      Head: './src/components/Head.astro'
     },
     head: [
-      // Add a custom meta tag to define the author of all pages.
-      {
-        tag: 'meta',
-        attrs: {
-          name: 'author',
-          content: 'Hrihorii Ilin',
-        },
-      },
-    ],
+    // Add a custom meta tag to define the author of all pages.
+    {
+      tag: 'meta',
+      attrs: {
+        name: 'author',
+        content: 'Hrihorii Ilin'
+      }
+    }],
     titleDelimiter: '—',
     lastUpdated: true,
     logo: {
@@ -205,13 +202,11 @@ export default defineConfig({
       github: 'https://github.com/Frikadellios/alphadev'
     },
     customCss: ['@fontsource/geist-sans', './src/styles/globalcss/index.css', './tailwind.docs.css', './src/styles/docs.css'],
-    plugins: [
-      starlightDocSearch({
-        appId: 'YOUR_APP_ID',
-        apiKey: 'YOUR_SEARCH_API_KEY',
-        indexName: 'YOUR_INDEX_NAME',
-      }),
-      lunaria({
+    plugins: [starlightDocSearch({
+      appId: 'YOUR_APP_ID',
+      apiKey: 'YOUR_SEARCH_API_KEY',
+      indexName: 'YOUR_INDEX_NAME'
+    }), lunaria({
       configPath: './lunaria.config.json',
       // The desired route to render the Lunaria dashboard.
       route: './lunaria',
@@ -232,16 +227,14 @@ export default defineConfig({
       },
       recentPostCount: 7
     })]
-  }), 
-  sitemap({
+  }), sitemap({
     entryLimit: 10000,
+    locales
   }), partytown({
     config: {
       forward: ['dataLayer.push']
     }
   }), expressiveCode(), liveCode({
     layout: './src/content/LiveCodeLayout.astro'
-  }), mdx()],
-  output: 'server',
-  adapter: vercel(),
+  }), mdx()]
 });
