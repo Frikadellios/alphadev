@@ -7,7 +7,7 @@ import lunaria from '@lunariajs/starlight';
 import tailwindcss from '@tailwindcss/vite';
 import expressiveCode from 'astro-expressive-code';
 import liveCode from 'astro-live-code';
-import { defineConfig } from 'astro/config';
+import { defineConfig, passthroughImageService } from 'astro/config';
 import { mdsvex } from 'mdsvex';
 import starlightBlog from 'starlight-blog';
 import AutoImport from 'unplugin-auto-import/astro';
@@ -17,6 +17,8 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import Icons from 'unplugin-icons/vite';
 import starlightDocSearch from '@astrojs/starlight-docsearch';
 import cloudflare from "@astrojs/cloudflare";
+import node from "@astrojs/node";  
+
 const locales = {
   root: {
     label: 'English',
@@ -51,8 +53,13 @@ const locales = {
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://alphadev-seven.vercel.app',
-  output: 'server',
+  image: {
+    service: {
+      entrypoint: 'astro/assets/services/noop'
+    }
+  },
+  site: 'https://example.com',
+  output: 'hybrid',
   adapter: cloudflare(),
   markdown: {
     rehypePlugins: [rehypeHeadingIds, [rehypeAutolinkHeadings, {
@@ -229,7 +236,6 @@ export default defineConfig({
     })]
   }), sitemap({
     entryLimit: 10000,
-    locales
   }), partytown({
     config: {
       forward: ['dataLayer.push']
