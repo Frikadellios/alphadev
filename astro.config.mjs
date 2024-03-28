@@ -7,19 +7,16 @@ import lunaria from '@lunariajs/starlight';
 import tailwindcss from '@tailwindcss/vite';
 import expressiveCode from 'astro-expressive-code';
 import liveCode from 'astro-live-code';
-import { defineConfig, passthroughImageService } from 'astro/config';
+import { defineConfig } from 'astro/config';
 import { mdsvex } from 'mdsvex';
 import starlightBlog from 'starlight-blog';
 import AutoImport from 'unplugin-auto-import/astro';
-import vercel from "@astrojs/vercel/serverless";
 import { rehypeHeadingIds } from '@astrojs/markdown-remark';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import Icons from 'unplugin-icons/vite';
 import starlightDocSearch from '@astrojs/starlight-docsearch';
 import cloudflare from "@astrojs/cloudflare";
-import node from "@astrojs/node";  
-import remarkToc from 'remark-toc';
-import rehypeMinifyHtml from 'rehype-minify-html';
+
 
 const locales = {
   root: {
@@ -73,7 +70,8 @@ export default defineConfig({
     prefetchAll: true
   },
   vite: {
-    plugins: [tailwindcss(), Icons({
+    plugins: [tailwindcss(), 
+      Icons({
       compiler: 'astro'
     })],
     css: {
@@ -210,7 +208,7 @@ export default defineConfig({
       youtube: 'https://youtube.com/devopsick',
       github: 'https://github.com/Frikadellios/alphadev'
     },
-    customCss: ['@fontsource/geist-sans', './src/styles/globalcss/index.css', './tailwind.docs.css', './src/styles/docs.css'],
+    customCss: ['@fontsource/geist-sans', './src/styles/docs.css'],
     plugins: [starlightDocSearch({
       appId: 'YOUR_APP_ID',
       apiKey: 'YOUR_SEARCH_API_KEY',
@@ -245,10 +243,7 @@ export default defineConfig({
   }), expressiveCode(), liveCode({
     layout: './src/content/LiveCodeLayout.astro'
   }), mdx({
-    syntaxHighlight: 'shiki',
-      remarkPlugins: [remarkToc],
-      rehypePlugins: [rehypeMinifyHtml],
-      remarkRehype: { footnoteLabel: 'Footnotes' },
+      syntaxHighlight: 'shiki',
       optimize: true,
       gfm: false,
     }),]
