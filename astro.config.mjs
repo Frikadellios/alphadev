@@ -18,6 +18,8 @@ import Icons from 'unplugin-icons/vite';
 import starlightDocSearch from '@astrojs/starlight-docsearch';
 import cloudflare from "@astrojs/cloudflare";
 import node from "@astrojs/node";  
+import remarkToc from 'remark-toc';
+import rehypeMinifyHtml from 'rehype-minify-html';
 
 const locales = {
   root: {
@@ -242,5 +244,12 @@ export default defineConfig({
     }
   }), expressiveCode(), liveCode({
     layout: './src/content/LiveCodeLayout.astro'
-  }), mdx()]
+  }), mdx({
+    syntaxHighlight: 'shiki',
+      remarkPlugins: [remarkToc],
+      rehypePlugins: [rehypeMinifyHtml],
+      remarkRehype: { footnoteLabel: 'Footnotes' },
+      optimize: true,
+      gfm: false,
+    }),]
 });
