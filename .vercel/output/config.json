@@ -28,11 +28,11 @@
 			"dest": "_render"
 		},
 		{
-			"src": "^\\/robots\\.txt\\/?$",
+			"src": "^\\/landing\\/?$",
 			"dest": "_render"
 		},
 		{
-			"src": "^\\/$",
+			"src": "^\\/robots\\.txt\\/?$",
 			"dest": "_render"
 		},
 		{

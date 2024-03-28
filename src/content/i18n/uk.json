@@ -23,5 +23,33 @@
   "aside.tip": "Порада",
   "aside.caution": "Обережно",
   "aside.danger": "Небезпечно",
-  "fileTree.directory": "Directory"
+  "fileTree.directory": "Directory",
+  "docsearch.searchBox.resetButtonTitle": "Очистити запит",
+   "docsearch.searchBox.resetButtonAriaLabel": "Очистити запит",
+   "docsearch.searchBox.cancelButtonText": "Скасувати",
+   "docsearch.searchBox.cancelButtonAriaLabel": "Скасувати",
+
+   "docsearch.startScreen.recentSearchesTitle": "Останні",
+   "docsearch.startScreen.noRecentSearchesText": "Немає останніх пошуків",
+   "docsearch.startScreen.saveRecentSearchButtonTitle": "Зберегти цей пошук",
+   "docsearch.startScreen.removeRecentSearchButtonTitle": "Видалити цей пошуковий запит з історії",
+   "docsearch.startScreen.favoriteSearchesTitle": "Вибране",
+   "docsearch.startScreen.removeFavoriteSearchButtonTitle": "Видалити цей пошуковий запит із вибраного",
+
+   "docsearch.errorScreen.titleText": "Не вдалося отримати результати",
+   "docsearch.errorScreen.helpText": "Ви можете перевірити підключення до мережі.",
+
+   "docsearch.footer.selectText": "Для вибору",
+   "docsearch.footer.selectKeyAriaLabel": "Введіть ключ",
+   "docsearch.footer.navigateText": "Для навігації",
+   "docsearch.footer.navigateUpKeyAriaLabel": "Стрілка вгору",
+   "docsearch.footer.navigateDownKeyAriaLabel": "Стрілка вниз",
+   "docsearch.footer.closeText": "Закрити",
+   "docsearch.footer.closeKeyAriaLabel": "Клавіша Escape",
+   "docsearch.footer.searchByText": "Шукати за",
+
+   "docsearch.noResultsScreen.noResultsText": "Немає результатів для",
+   "docsearch.noResultsScreen.suggestedQueryText": "Спробуйте знайти",
+   "docsearch.noResultsScreen.reportMissingResultsText": "Вірите, що цей запит має повернути результати?",
+   "docsearch.noResultsScreen.reportMissingResultsLinkText": "Дайте нам знати."
 }

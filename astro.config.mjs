@@ -12,6 +12,11 @@ import { mdsvex } from 'mdsvex';
 import starlightBlog from 'starlight-blog';
 import AutoImport from 'unplugin-auto-import/astro';
 import vercel from "@astrojs/vercel/serverless";
+import { rehypeHeadingIds } from '@astrojs/markdown-remark';
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
+import Icons from 'unplugin-icons/vite';
+import starlightDocSearch from '@astrojs/starlight-docsearch';
+
 const locales = {
   root: {
     label: 'English',
@@ -47,11 +52,23 @@ const locales = {
 // https://astro.build/config
 export default defineConfig({
   site: 'https://alphadev-seven.vercel.app',
+  markdown: {
+    rehypePlugins: [
+      rehypeHeadingIds,
+      [
+        rehypeAutolinkHeadings,
+        {
+          // Wrap the heading text in a link.
+          behavior: 'wrap',
+        },
+      ],
+    ],
+  },
   prefetch: {
     prefetchAll: true
   },
   vite: {
-    plugins: [tailwindcss()],
+    plugins: [tailwindcss(), Icons({ compiler: 'astro' })],
     css: {
       transformer: 'lightningcss'
     }
@@ -66,6 +83,20 @@ export default defineConfig({
     })
   }), starlight({
     title: 'AlphaDEV',
+    components: {
+      // Relative path to the custom component.
+      Head: './src/components/Head.astro',
+    },
+    head: [
+      // Add a custom meta tag to define the author of all pages.
+      {
+        tag: 'meta',
+        attrs: {
+          name: 'author',
+          content: 'Hrihorii Ilin',
+        },
+      },
+    ],
     titleDelimiter: '—',
     lastUpdated: true,
     logo: {
@@ -174,7 +205,13 @@ export default defineConfig({
       github: 'https://github.com/Frikadellios/alphadev'
     },
     customCss: ['@fontsource/geist-sans', './src/styles/globalcss/index.css', './tailwind.docs.css', './src/styles/docs.css'],
-    plugins: [lunaria({
+    plugins: [
+      starlightDocSearch({
+        appId: 'YOUR_APP_ID',
+        apiKey: 'YOUR_SEARCH_API_KEY',
+        indexName: 'YOUR_INDEX_NAME',
+      }),
+      lunaria({
       configPath: './lunaria.config.json',
       // The desired route to render the Lunaria dashboard.
       route: './lunaria',
@@ -195,7 +232,10 @@ export default defineConfig({
       },
       recentPostCount: 7
     })]
-  }), sitemap(), partytown({
+  }), 
+  sitemap({
+    entryLimit: 10000,
+  }), partytown({
     config: {
       forward: ['dataLayer.push']
     }

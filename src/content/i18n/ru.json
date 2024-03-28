@@ -23,5 +23,33 @@
   "aside.tip": "Знали ли вы?",
   "aside.caution": "Осторожно",
   "aside.danger": "Опасно",
-  "fileTree.directory": "Directory"
+  "fileTree.directory": "Directory",
+  "docsearch.searchBox.resetButtonTitle": "Очистить запрос",
+   "docsearch.searchBox.resetButtonAriaLabel": "Очистить запрос",
+   "docsearch.searchBox.cancelButtonText": "Отмена",
+   "docsearch.searchBox.cancelButtonAriaLabel": "Отмена",
+
+   "docsearch.startScreen.recentSearchesTitle": "Недавние",
+   "docsearch.startScreen.noRecentSearchesText": "Нет недавних поисков",
+   "docsearch.startScreen.saveRecentSearchButtonTitle": "Сохранить этот поиск",
+   "docsearch.startScreen.removeRecentSearchButtonTitle": "Удалить этот поиск из истории",
+   "docsearch.startScreen.favoriteSearchesTitle": "Избранное",
+   "docsearch.startScreen.removeFavoriteSearchButtonTitle": "Удалить этот поиск из избранного",
+
+   "docsearch.errorScreen.titleText": "Невозможно получить результаты",
+   "docsearch.errorScreen.helpText": "Возможно, вам захочется проверить сетевое соединение.",
+
+   "docsearch.footer.selectText": "Выбрать",
+   "docsearch.footer.selectKeyAriaLabel": "Введите ключ",
+   "docsearch.footer.navigateText": "Для навигации",
+   "docsearch.footer.navigateUpKeyAriaLabel": "Стрелка вверх",
+   "docsearch.footer.navigateDownKeyAriaLabel": "Стрелка вниз",
+   "docsearch.footer.closeText": "Закрыть",
+   "docsearch.footer.closeKeyAriaLabel": "Клавиша Escape",
+   "docsearch.footer.searchByText": "Искать по",
+
+   "docsearch.noResultsScreen.noResultsText": "Нет результатов для",
+   "docsearch.noResultsScreen.suggestedQueryText": "Попробуйте выполнить поиск",
+   "docsearch.noResultsScreen.reportMissingResultsText": "Считаете, что этот запрос должен возвращать результаты?",
+   "docsearch.noResultsScreen.reportMissingResultsLinkText": "Дайте нам знать."
 }
